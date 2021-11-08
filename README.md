@@ -7,7 +7,7 @@
 <table>
 <tr>
 <td>
-  A dashboard using an API created with Java SpringBoot to display sells data.
+  A dashboard that fetch data from an API created with Java Spring Boot and displays it.
 </td>
 </tr>
 </table>
