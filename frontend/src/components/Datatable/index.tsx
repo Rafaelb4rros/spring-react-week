@@ -17,7 +17,7 @@ type Sale = {
   seller: sellersResponse;
 };
 
-export type SalePage = {
+type SalePage = {
   content?: Sale[];
   last: boolean;
   totalPages: number;
@@ -42,7 +42,7 @@ export function Datatable() {
   useEffect(() => {
     axios
       .get<SalePage>(
-        `${process.env.REACT_APP_BASE_URL}sales?page=${page}&size=20&sort=date,desc`
+        `${process.env.REACT_APP_BASE_URL}sales?page=${page}&size=20&sort=seller,desc`
       )
       .then((res) => {
         setPages(res.data);
