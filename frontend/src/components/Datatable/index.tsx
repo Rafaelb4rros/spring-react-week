@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 export function Datatable() {
+  const [sellers, setSellers] = useState([]);
+
   return (
     <div className="table-responsive">
       <table className="table table-striped table-sm">
