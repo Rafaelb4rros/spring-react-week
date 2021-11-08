@@ -1,6 +1,8 @@
+import { useEffect } from "react";
 import Chart from "react-apexcharts";
 
 export function Barchart() {
+  useEffect(() => {}, []);
   const options = {
     plotOptions: {
       bar: {

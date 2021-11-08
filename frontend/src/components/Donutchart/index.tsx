@@ -8,25 +8,26 @@ type chartData = {
 };
 
 type chartDataRes = {
-  sellerName: string;
+  sallerName: string;
   sum: number;
 };
+
 export function Donutchart() {
-  const [chartData, setChartData] = useState<chartData>([], []);
+  const [chartData, setChartData] = useState<chartData>({
+    labels: [],
+    series: [],
+  });
 
   useEffect(() => {
     axios.get(`${process.env.REACT_APP_BASE_URL}sales/sum`).then((res) => {
       const data: chartDataRes[] = res.data;
 
-      const dataLabels = data.map((label) => label.sellerName);
-      const dataSeries = data.map((serie) => serie.sellerName);
+      const dataLabels = data.map((label) => label.sallerName);
+      const dataSeries = data.map((serie) => serie.sum);
+
+      setChartData({ labels: dataLabels, series: dataSeries });
     });
   }, []);
-
-  const mockData = {
-    series: [477138, 499928, 444867, 220426, 473088],
-    labels: ["Anakin", "Barry Allen", "Kal-El", "Logan", "Padmé"],
-  };
 
   const options = {
     legend: {
@@ -35,8 +36,8 @@ export function Donutchart() {
   };
   return (
     <Chart
-      options={{ ...options, labels: mockData.labels }}
-      series={mockData.series}
+      options={{ ...options, labels: chartData.labels }}
+      series={chartData.series}
       type="donut"
       height="240px"
     />
