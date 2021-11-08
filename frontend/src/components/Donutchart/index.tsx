@@ -40,7 +40,6 @@ export function Donutchart() {
       series={chartData.series}
       type="donut"
       height="240px"
-      onClick={(e: any) => console.log(e.target)}
     />
   );
 }
