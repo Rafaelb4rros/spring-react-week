@@ -1,4 +1,4 @@
-# ![WebApp](https://github.com/Rafaelb4rros/spring-react-week/tree/main/frontend/src/assets/springreactweek.png)
+# ![WebApp](https://github.com/Rafaelb4rros/spring-react-week/blob/main/frontend/src/assets/springreactweek.png)
 
 # WebApp
 
