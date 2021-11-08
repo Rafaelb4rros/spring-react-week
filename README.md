@@ -1,6 +1,8 @@
-# ![WebApp](https://github.com/Rafaelb4rros/spring-react-week/blob/main/frontend/src/assets/springreactweek.png)
+# ![Dashboard](https://github.com/Rafaelb4rros/spring-react-week/blob/main/frontend/src/assets/springreactweek.png)
 
-# WebApp
+# Dashboard
+
+# ![WebApp](https://github.com/Rafaelb4rros/spring-react-week/blob/main/frontend/src/assets/springreactweekimg.png)
 
 <table>
 <tr>
